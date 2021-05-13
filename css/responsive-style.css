@@ -1,0 +1,111 @@
+:root{
+    --primary-color:#000;
+    --secondary-color:#9f5ba4;
+    --text-color:#fff;
+    --four-color:#848484;
+    --black-light-color:#2f2f2f;
+}
+
+@media(max-width:1030px){
+    /*header section */
+    .header .navbar-nav a.nav-link{
+        padding:0.8rem 1rem;
+    }
+}
+@media(max-width:992px){
+
+    .menu-toggle{
+        position: relative;
+    }
+    .menu-toggle span{
+        width:2rem;
+        height:0.2rem;
+        display: block;
+        background-color:var(--primary-color);
+        margin:0.35rem;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+         transition: all 0.3s;
+    }
+    .menu-toggle.active span:nth-child(1){
+        transform:rotate(45deg);
+        position: relative;
+        top:0.2rem;
+
+    }
+    .menu-toggle.active span:nth-child(2){
+        display: none;
+
+    }
+    .menu-toggle.active span:nth-child(3){
+        transform:rotate(-45deg);
+        position: relative;
+        top:-0.3rem;
+
+    }
+    #navbarSupportedContent{
+        text-align: center;
+    }
+}
+
+@media(max-width:500px)
+{
+    .banner-heading p{
+        font-size:16px;
+
+    }
+    .about .left{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .eng-impact{
+        margin:0;
+        padding:0;
+    }
+   
+    .card-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 20px;
+        
+    
+    }
+    .card{
+       margin:10px;
+   }
+   .contact-us .left .animation-btn{
+       margin-left: 56px;
+       
+
+   }
+   .contact-us .left .animation-btn .btn{
+       margin-top: 20px;
+       margin-left: 66px;
+   }
+   .footer .icons-box{
+       margin-top: 50px;
+   }
+   .dropdown .dropdown-menu ul{
+       width:200px;
+       height:300px;
+       margin-right: 20px;
+       padding:5px;
+   }
+   .dropdown .dropdown-menu ul li{
+       font-size: 10px;
+   }
+   .nav-icons{
+       width:20px;
+       height:20px;
+   }
+   .nav-icons i{
+       font-size:18px;
+   }
+
+}
